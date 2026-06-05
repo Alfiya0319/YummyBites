@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="royal_purple">#2E0249</color>
+    <color name="royal_dark">#1A012C</color>
+    <color name="gold">#E4B343</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#F4F4F4</color>
+    <color name="black">#000000</color>
+</resources>

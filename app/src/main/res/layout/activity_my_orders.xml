@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingHorizontal="8dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/chevron"
+            android:contentDescription="Back"
+            app:tint="#1E1E1E" />
+
+        <TextView
+            android:id="@+id/titleOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/backBtn"
+            android:text="My Orders History"
+            android:textColor="#1E1E1E"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ordersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerLayout"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="none"/>
+
+    <ProgressBar
+        android:id="@+id/ordersProgress"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="#FF7043"
+        android:visibility="visible" />
+
+</RelativeLayout>

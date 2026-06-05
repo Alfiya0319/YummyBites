@@ -1,0 +1,47 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF6F00">
+
+    <!-- CENTER CONTAINER -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/food_logo"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/food_logo2"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_shape"
+            android:clipToOutline="true"
+            android:contentDescription="App Logo"/>
+
+        <!-- App Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YummyBites"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Loading text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Getting your food ready..."
+            android:textSize="16sp"
+            android:textColor="#FFF3E0"
+            android:layout_marginTop="6dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

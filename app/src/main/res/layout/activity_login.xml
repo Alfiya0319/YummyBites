@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_bbg"/>
+
+    <!-- Dark Overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_overlay"/>
+
+    <!-- Login Card -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/login_card_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOG IN"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"/>
+
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:textColor="@color/white"
+            android:textColorHint="#BDBDBD"
+            android:backgroundTint="@color/white"
+            android:paddingStart="16dp"
+            android:inputType="textEmailAddress"/>
+
+        <!-- note : remove password after testing -->
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/password"
+            android:textColor="@color/white"
+            android:textColorHint="#BDBDBD"
+            android:backgroundTint="@color/white"
+            android:paddingStart="16dp"
+            android:inputType="textPassword"/>
+
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="LOGIN"
+            android:backgroundTint="#9C27B0"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/signupTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don’t have an account? Sign up"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"/>
+        <TextView
+            android:id="@+id/forgotPasswordTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textSize="12sp"
+            android:textColor="#9C27B0"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

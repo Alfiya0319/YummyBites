@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/or_con"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_confirmation"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:elevation="12dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_sccs" />
+
+            <TextView
+                android:id="@+id/billUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thank you, User!"
+                android:textSize="22sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your delicious food is on the way 🍔"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginTop="8dp"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="16dp"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/billOrderId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order ID: #FOOD1234"
+                android:textSize="14sp"
+                android:textColor="#555555" />
+
+            <TextView
+                android:id="@+id/billAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery to: Home Address"
+                android:textSize="13sp"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:textColor="#777777"/>
+
+            <TextView
+                android:id="@+id/billAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Paid: ₹0"
+                android:textSize="20sp"
+                android:textColor="#FF6F00"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:id="@+id/viewDetailsLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Order Summary"
+                android:textSize="12sp"
+                android:textColor="#2196F3"
+                android:layout_marginTop="10dp"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/trackOrderBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="TRACK ORDER"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:backgroundTint="#FF6F00" />
+
+            <Button
+                android:id="@+id/goHomeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="BACK TO HOME"
+                android:textAllCaps="false"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#F5F5F5"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

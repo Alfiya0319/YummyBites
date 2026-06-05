@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/restaurant_image"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/restaurant_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_image" />
+
+    <TextView
+        android:id="@+id/restaurant_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/restaurant_name"
+        app:layout_constraintStart_toStartOf="@+id/restaurant_name"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_name" />
+
+    <TextView
+        android:id="@+id/cuisines"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/restaurant_address"
+        app:layout_constraintStart_toStartOf="@+id/restaurant_address"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_address" />
+
+    <TextView
+        android:id="@+id/opening_hours"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/cuisines"
+        app:layout_constraintStart_toStartOf="@+id/cuisines"
+        app:layout_constraintTop_toBottomOf="@+id/cuisines" />
+
+    <RatingBar
+        android:id="@+id/dining_rating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/opening_hours"
+        app:layout_constraintTop_toBottomOf="@+id/opening_hours" />
+
+    <TextView
+        android:id="@+id/dining_review_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dining_rating"
+        app:layout_constraintStart_toEndOf="@+id/dining_rating"
+        app:layout_constraintTop_toTopOf="@+id/dining_rating" />
+
+    <RatingBar
+        android:id="@+id/delivery_rating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/dining_rating"
+        app:layout_constraintTop_toBottomOf="@+id/dining_rating" />
+
+    <TextView
+        android:id="@+id/delivery_review_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/delivery_rating"
+        app:layout_constraintStart_toEndOf="@+id/delivery_rating"
+        app:layout_constraintTop_toTopOf="@+id/delivery_rating" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/opening_hours"
+        app:layout_constraintStart_toStartOf="@+id/delivery_rating"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_rating" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YummyBites</string>
+
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <string name="forgot_password_title">FORGOT PASSWORD</string>
+    <string name="forgot_password_info">Enter your registered email to receive a reset link.</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="back_to_login">Back to Login</string>
+
+    <string name="confirm_order">Confirm Order</string>
+    <string name="profile_title">My Profile</string>
+</resources>

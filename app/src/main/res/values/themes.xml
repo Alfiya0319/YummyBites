@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.YourApp" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+    <style name="Theme.OnlineFoodOrdering" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/royal_purple</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/royal_dark</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+</resources>
